@@ -10,6 +10,9 @@ import javax.persistence.Id;
 public class Pessoa implements Serializable {
   private  static final long serialVersionUID = 1L;
 
+  public Pessoa(){
+  }
+
   @Id // atributo que corresponde a primary key
   @GeneratedValue(strategy=GenerationType.IDENTITY) // chave gerada automaticamente
   private Integer id;
